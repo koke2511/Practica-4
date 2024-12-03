@@ -10,6 +10,7 @@ export const fromModelToVehicle = (vehicleModel : VehicleModel): Vehicle => {
         name: vehicleModel.name,
         manufactue: vehicleModel.manufacture,
         year: vehicleModel.year,
+        joke: "Default joke value",
         parts: vehicleModel.parts.map(u=> ({
             id: u.toString(),
             name: "", 
@@ -29,6 +30,7 @@ export const fromModelToParts = (partsModel : PartsModel) : Parts => {
             name: "",
             manufactue: "",
             year: 0,
+            joke: "",
             parts: []
         })),
     };
