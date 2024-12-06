@@ -29,6 +29,6 @@ export type Parts = {
     id: string,
     name: string,
     price: number,
-    vehicleId: Vehicle[]
+    vehicleId: string
 }
 
